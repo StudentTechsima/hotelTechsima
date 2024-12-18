@@ -15,7 +15,7 @@ const EnquiryTable = () => {
     // show all enquires
     const showAllenquires = async () => {
         try {
-            const res = await fetch(`http://localhost:3000/admin/api/get-enquiry`, {
+            const res = await fetch(`https://hoteltechsima-backend.onrender.com/admin/api/get-enquiry`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('admintoken')}`
