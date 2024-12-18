@@ -32,7 +32,7 @@ const UpdateUserData = () => {
             formData.append('role', role);                 
             formData.append('profile', profile);
 
-            const UpdateUser = await axios.put(`http://localhost:3000/admin/api/update-user/${id}`, formData, {headers:{Authorization:`Bearer ${localStorage.getItem('admintoken')}`}});
+            const UpdateUser = await axios.put(`https://hoteltechsima-backend.onrender.com/admin/api/update-user/${id}`, formData, {headers:{Authorization:`Bearer ${localStorage.getItem('admintoken')}`}});
 
             if(UpdateUser.status === 200){
                 toast.success('Updated Successfully');
