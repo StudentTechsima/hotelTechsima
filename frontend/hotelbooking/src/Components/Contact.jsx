@@ -24,7 +24,7 @@ const Contact = () => {
     const handleContactUs = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch(`http://localhost:3000/client/contact-us`,{
+            const res = await fetch(`https://hoteltechsima-backend.onrender.com/client/contact-us`,{
                 method:"POST",
                 headers:{
                     'Content-Type':'application/json'
