@@ -33,7 +33,7 @@ const UpdateContact = () => {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:3000/admin/api/update-user-contact/${id}`, {
+      const res = await fetch(`https://hoteltechsima-backend.onrender.com/admin/api/update-user-contact/${id}`, {
         method: "PUT",
         headers: {
           'Content-Type': 'application/json',
