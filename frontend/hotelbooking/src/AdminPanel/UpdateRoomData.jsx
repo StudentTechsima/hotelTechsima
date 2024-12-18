@@ -35,7 +35,7 @@ const UpdateRoomData = () => {
             formData.append('room_booking_status', room_booking_status);
 
 
-            const res = await axios.put(`http://localhost:3000/admin/api/update-room/${id}`, formData, { headers: { Authorization: `Bearer ${localStorage.getItem('admintoken')}` } })
+            const res = await axios.put(`https://hoteltechsima-backend.onrender.com/admin/api/update-room/${id}`, formData, { headers: { Authorization: `Bearer ${localStorage.getItem('admintoken')}` } })
 
             if (res.status === 200) {
                 toast.success('Updated Successfully')
