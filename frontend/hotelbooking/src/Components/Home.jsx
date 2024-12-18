@@ -47,7 +47,7 @@ const Home = () => {
         booking_check_out_date,
       }).toString();
   
-      const res = await fetch(`http://localhost:3000/client/get-available-rooms?${queryParams}`, {
+      const res = await fetch(`https://hoteltechsima-backend.onrender.com/client/get-available-rooms?${queryParams}`, {
         method: "GET",
         headers: {
           'Content-Type': 'application/json'
