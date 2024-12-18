@@ -23,7 +23,7 @@ const Room_Detail = () => {
         const getRoomById = async () => {
             setLoader(true);
             try {
-                const res = await fetch(`http://localhost:3000/client/get-room/${id}`, {
+                const res = await fetch(`https://hoteltechsima-backend.onrender.com/client/get-room/${id}`, {
                     method: 'GET'
                 });
                 if (res.status === 200) {
@@ -38,7 +38,7 @@ const Room_Detail = () => {
 
         const myProfile = async () => {
             try {
-                const res = await fetch(`http://localhost:3000/client/user-profile`, {
+                const res = await fetch(`https://hoteltechsima-backend.onrender.com/client/user-profile`, {
                     method: 'GET',
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('usertoken')}`
@@ -105,7 +105,7 @@ const Room_Detail = () => {
                 };
 
                 
-                    const res = await fetch(`http://localhost:3000/client/book-room`, {
+                    const res = await fetch(`https://hoteltechsima-backend.onrender.com/client/book-room`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -147,7 +147,7 @@ const Room_Detail = () => {
                     <>
                         <div className="image-container">
                             <img
-                                src={`http://localhost:3000/${room.room_image}`}
+                                src={`https://hoteltechsima-backend.onrender.com/${room.room_image}`}
                                 className="room-image"
                                 alt="Room"
                                 title={`Room number ${room.room_number}`}
