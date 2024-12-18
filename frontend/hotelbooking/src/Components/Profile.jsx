@@ -25,7 +25,7 @@ const Profile = () => {
     const myProfile = async () => {
         
         try {
-            const res = await fetch(`http://localhost:3000/client/user-profile`, {
+            const res = await fetch(`https://hoteltechsima-backend.onrender.com/client/user-profile`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('usertoken')}`
@@ -68,7 +68,7 @@ const Profile = () => {
             if (!MYprofile.fname || !MYprofile.phone || !MYprofile.email || !MYprofile.aadhar_number) {
                 toast.error('All field is required')
             } else {
-                const res = await fetch(`http://localhost:3000/client/update-user-account/${MYprofile.id}`, {
+                const res = await fetch(`https://hoteltechsima-backend.onrender.com/client/update-user-account/${MYprofile.id}`, {
                     method: "PUT",
                     headers: {
                         'Content-Type': 'application/json'
@@ -106,7 +106,7 @@ const Profile = () => {
                 <div className="profileImg">
                     <div className="imgDiv" style={{ background: "#002233" }}>
                         <img
-                            src={`http://localhost:3000/${MYprofile.profile}`}
+                            src={`https://hoteltechsima-backend.onrender.com/${MYprofile.profile}`}
                             alt="profile pic"
                             className="imge"
                             height="190px"
