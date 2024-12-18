@@ -15,7 +15,7 @@ const RoomTable = () => {
     // Api for showing all rooms
     const showAllRooms = async () => {
         try {
-            const res = await fetch(`http://localhost:3000/admin/api/get-all-room`, {
+            const res = await fetch(`https://hoteltechsima-backend.onrender.com/admin/api/get-all-room`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('admintoken')}`
