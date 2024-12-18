@@ -14,7 +14,7 @@ const BookingTable = () => {
     // for showing all booking details
     const showAllbooking = async () => {
         try {
-            const res = await fetch(`http://localhost:3000/admin/api/get-bookings`, {
+            const res = await fetch(`https://hoteltechsima-backend.onrender.com/admin/api/get-bookings`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('admintoken')}`
