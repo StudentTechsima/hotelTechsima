@@ -15,7 +15,7 @@ const Contacts = () => {
      // show all contacts
      const showAllcontacts = async () => {
         try {
-            const res = await fetch(`http://localhost:3000/admin/api/get-all-contact`, {
+            const res = await fetch(`https://hoteltechsima-backend.onrender.com/admin/api/get-all-contact`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('admintoken')}`
