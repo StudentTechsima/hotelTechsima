@@ -38,7 +38,7 @@ const Registration = () => {
         formData.append('password', password);
 
 
-        const res = await axios.post(`http://localhost:3000/client/register`, formData);
+        const res = await axios.post(`https://hoteltechsima-backend.onrender.com/client/register`, formData);
 
         if (res.status === 201) {
           toast.success('User Register Successfully');
