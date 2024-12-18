@@ -42,7 +42,7 @@ const AdminDashboard = () => {
     // Show the name of current login admin or subAdmin
     const currentLogin = async () => {
         try {
-            const res = await fetch(`http://localhost:3000/admin/api/user-profile`, {
+            const res = await fetch(`https://hoteltechsima-backend.onrender.com/admin/api/user-profile`, {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('admintoken')}`
