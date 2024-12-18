@@ -35,7 +35,7 @@ const UpdateEnquiry = () => {
     const handleUpdate = async (e) => {
         e.preventDefault();
       try {
-        const res = await fetch(`http://localhost:3000/admin/api/update-enquiry/${id}`, {
+        const res = await fetch(`https://hoteltechsima-backend.onrender.com/admin/api/update-enquiry/${id}`, {
           method:"PUT",
           headers:{
             'Content-Type':'application/json',
